@@ -3,8 +3,6 @@ let root = document.getElementById("root");
 
 async function mostrarPokemones() {
   let arrayDePokemones = await buscarPokemon();
-  console.log("Estoy dentro de funcion ejemplo", arrayDePokemones);
-
   let html = "";
   arrayDePokemones.forEach((pokemon) => {
     let cardPokemon = `<div class='card'>
@@ -13,18 +11,15 @@ async function mostrarPokemones() {
                               <span>${pokemon.id}</span>
                               <span>${pokemon.tipos[0].type.name}</span>
                           </div>`;
-
     html += cardPokemon;
   });
 
   root.innerHTML += html;
 }
-
 mostrarPokemones();
 
 let botonDeBusqueda = document.getElementById("buscar-pokemon");
 let barraDeBusqueda = document.getElementById("barra-pokemon");
-
 botonDeBusqueda.addEventListener("click", async function (event) {
   event.preventDefault();
   let pokemonBuscado = await buscarPokemonPorNombre(barraDeBusqueda.value);

@@ -17,3 +17,12 @@
   height: 50px;
   width: 50px;
 }
+
+.card > img {
+  width: 160px;
+  height: 200px;
+}
+
+.d-flex{
+  margin-left: 40%;
+}
