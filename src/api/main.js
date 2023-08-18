@@ -6,10 +6,10 @@ async function mostrarPokemones() {
   let html = "";
   arrayDePokemones.forEach((pokemon) => {
     let cardPokemon = `<div class='card'>
-                              <span>${pokemon.nombre}</span>
+                              <span class="spanId" >${pokemon.id}</span>
                               <img class='card-image' src='${pokemon.imagen}'/>
-                              <span>${pokemon.id}</span>
-                              <span>${pokemon.tipos[0].type.name}</span>
+                              <span class="spanInfo" >${pokemon.nombre}</span>
+                              <span class="spanInfo" >${pokemon.tipos[0].type.name}</span>
                           </div>`;
     html += cardPokemon;
   });

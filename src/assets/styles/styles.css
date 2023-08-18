@@ -1,28 +1,82 @@
-#root{
-    display: flex;
-    flex-wrap: wrap;
+* {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
 
 }
+
+.container-fluid{
+  background: linear-gradient(to bottom left, red, pink);
+}
+
+.d-flex {
+  margin-left: 37%;
+}
+
+.titlePoke{
+  margin: 10px;
+  padding-right: 20px;
+  color: black;
+  font-size: 30px;
+}
+
+.form-control{
+  margin: auto;
+  height: 40px;
+}
+
+.spanInfoNombre{
+  font-size: 30px;
+}
+
+.btn{
+  background-color: rgb(240, 167, 167);
+  margin: auto;
+  height: 50px;
+  color: rgb(57, 57, 57);
+}
+
 .card {
   align-items: center;
-  background-color: cyan;
+  justify-content: center;
+  background-image: url("../img/poke.jpg");
+  background-size: auto;
   display: flex;
+  margin: 17px 15px;
   flex-direction: column;
-  width: 15%;
-  margin: 2px;
+  width: 15rem;
+  height: 25rem;
   border-radius: 25px;
+  border-radius: 167px 167px 98px 98px;
+  -webkit-border-radius: 167px 167px 98px 98px;
+  -moz-border-radius: 167px 167px 98px 98px;
+  border: 7px solid #ede6e6;
+  box-shadow: 20px 33px 75px -6px rgba(242, 5, 5, 0.75);
+  -webkit-box-shadow: 20px 33px 75px -6px rgba(242, 5, 5, 0.75);
+  -moz-box-shadow: 20px 33px 75px -6px rgba(242, 5, 5, 0.75);
 }
 
 .card-image {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  margin: 30px 20px;
 }
 
-.card > img {
+.card img {
   width: 160px;
-  height: 200px;
+  height: 160px;
 }
 
-.d-flex{
-  margin-left: 40%;
+.spanId {
+  background-color: #ede6e6;
+  color: black;
+  border: 1.5px solid black;
+  padding: 7px 15px;
+  font-size: 20px;
+  border-radius: 150px;
 }
